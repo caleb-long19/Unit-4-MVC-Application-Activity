@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace Unit_4_MVC_Activity.Models-Tables
+namespace Unit_4_MVC_Activity.Models
 {
     public partial class COMP2001_CLONGContext : DbContext
     {

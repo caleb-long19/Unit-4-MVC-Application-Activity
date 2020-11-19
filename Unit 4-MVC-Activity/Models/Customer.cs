@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace Unit_4_MVC_Activity.Models-Tables
+namespace Unit_4_MVC_Activity.Models
 {
     public partial class Customer
     {

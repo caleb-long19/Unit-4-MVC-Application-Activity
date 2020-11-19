@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.EntityFrameworkCore;
+using Unit_4_MVC_Activity.Models;
 
 namespace Unit_4_MVC_Activity
 {
@@ -23,6 +25,9 @@ namespace Unit_4_MVC_Activity
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<COMP2001_CLONGContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("COMP2001_CLong")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
